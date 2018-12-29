@@ -26,3 +26,19 @@ function sumMultiples() {
 }
 
 sumMultiples();
+
+// Analysis:
+
+// Take Two:
+
+function sumMultiples2() {
+  let i = 1000;
+  let sum = 0;
+  while (i--) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      sum += i;
+    }
+  }
+  console.log(sum);
+  return sum;
+}
